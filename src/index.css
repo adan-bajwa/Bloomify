@@ -1,5 +1,30 @@
-@tailwind base; @tailwind components; @tailwind utilities;
-html { scroll-behavior: smooth; }
-body { @apply bg-petal font-body text-ink antialiased overflow-x-hidden; }
-.grad-text { background: linear-gradient(90deg,#F7A6BE,#FFD43B,#8E44B8,#1F3A9E,#F7A6BE); background-size:300% 100%; -webkit-background-clip:text; background-clip:text; color:transparent; @apply animate-shift; }
-@media (prefers-reduced-motion: reduce) { *,*::before,*::after { animation: none !important; transition: none !important; } }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    @apply bg-petal font-body text-ink antialiased overflow-x-hidden;
+}
+
+.grad-text {
+    background: linear-gradient(90deg, #F7A6BE, #FFD43B, #8E44B8, #1F3A9E, #F7A6BE);
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    @apply animate-shift;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
